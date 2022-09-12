@@ -1,0 +1,16 @@
+.content-tab-wrapper.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.balance-menu .dropdown .bg-color {
+  background: rgb(74, 90, 99);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: rgb(255, 255, 255);
+  width: 16rem;
+  border-radius: 30px;
+}
