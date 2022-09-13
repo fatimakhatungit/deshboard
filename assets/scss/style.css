@@ -72,6 +72,22 @@ img {
   height: auto;
 }
 
+*::-moz-placeholder {
+  font-family: var("Roboto", serif);
+  color: rgb(133, 133, 133);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+*:-ms-input-placeholder {
+  font-family: var("Roboto", serif);
+  color: rgb(133, 133, 133);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
 *::placeholder {
   font-family: var("Roboto", serif);
   color: rgb(133, 133, 133);
@@ -126,20 +142,30 @@ select:visited {
   z-index: 10;
 }
 .scroll-top i {
-  animation: bounce 2s ease infinite;
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 10%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes bounce {
   0%, 10%, 100%, 20%, 50%, 80% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
   60% {
-    -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
 }
@@ -1233,8 +1259,6 @@ main {
 }
 
 .dd input:hover ~ .dd-a {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
   background: #333;
   border-radius: 10px;
@@ -1357,6 +1381,4 @@ main {
   border-radius: 50%;
 }
 
-/* Page title banner */
-
-/*# sourceMappingURL=style.css.map */
+/* Page title banner *//*# sourceMappingURL=style.css.map */

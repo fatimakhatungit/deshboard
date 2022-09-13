@@ -444,6 +444,7 @@
                     background: rgb(112, 112, 112);
                     height: 40px;
                     border-radius: 50%;
+                    transition: 0.6s;
                 }
             }
 
@@ -779,6 +780,8 @@
                         background: rgb(112, 112, 112);
                         border-radius: 50%;
                         height: 45px; 
+                        transition-duration:0.6s;
+                        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
                     }
                 }
             }
